@@ -207,10 +207,21 @@ section:nth-child(2n+1){
 	background-size: contain;
 	line-height:1.2rem;
 }
-#education
+/* Calculator */
+#calculate{
+	padding:10px;
+	background-color: orange;
+	margin:0px 190px;
+}
+#calculate span{
+	font-size:15px;
+	color:white;
+	font-weight:bold;
+}
+/* #education
 {
 	height:100vh;
-}
+} */
 /*contact*/
 #contact{
 	height:90vh;
