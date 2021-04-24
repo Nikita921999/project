@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Life Expectancy</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>PERSONAL DATA</h1>
+            <form action="">
+                <div>
+                    <label for="full-name">Enter your name : </label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+                <div>
+                    <label for="age">Enter your age : </label>
+                    <input type="text" id="age" name="age" required>
+                </div>
+                <div>
+                    <p>Gender : </p>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="others" name="gender" value="others">
+                    <label for="others">Others</label><br>
+                </div>
+                <div>
+                    <label for="height">Enter height (in cm) : </label>
+                    <input type="text" id="height" name=heigth required>
+                </div>
+                <div>
+                    <label for="weight">Enter weight (in kg) : </label>
+                    <input type="text" id="weight" name=weigth required>
+                </div>
+
+                <h1>MEDICAL DATA</h1>
+
+                <div>
+                    <p>Do you have diabetes?</p>
+                    <input type="radio" name="diabetes" id="dia-no" value="dia-no">
+                    <label for="dia-no">No</label><br>
+                    <input type="radio" name="diabetes" id="dia-controlled" value="dia-controlled">
+                    <label for="dia-controlled">Yes. But it is well – controlled with diet and /or medication. I am not
+                        on
+                        insulin.</label><br>
+                    <input type="radio" name="diabetes" id="dia-insulin" value="dia-insulin">
+                    <label for="dia-insulin">Yes. But it is well – controlled with diet and /or medication. I have only
+                        mild
+                        outward symptoms.I am on insulin.</label><br>
+                    <input type="radio" name="diabetes" id="dia-yes" value="dia-yes">
+                    <label for="dia-yes">Yes. I have moderate outward symptoms.</label><br>
+                </div>
+                <div>
+                    <p>Do you have any heart disease history?</p>
+                    <input type="radio" name="heart" id="hrt-no" value="hrt-no">
+                    <label for="hrt-no">I have no history of heart disease.</label><br>
+                    <input type="radio" name="heart" id="hrt-controlled" value="hrt-controlled">
+                    <label for="hrt-controlled">I have been diagnosed with mild heart disease which is well –
+                        controlled. I have never had a heart attack.</label><br>
+                    <input type="radio" name="heart" id="hrt-attack-no" value="hrt-attack-no">
+                    <label for="hrt-attack-no">I have had a heart attack, but there are no residual symptoms.
+                    </label><br>
+                    <input type="radio" name="heart" id="hrt-yes" value="hrt-yes">
+                    <label for="hrt-yes">I have had more than one heart attack with severe residual
+                        symptoms.</label><br>
+                </div>
+                <div>
+                    <p>Have you ever had a stroke?</p>
+                    <input type="radio" id="stroke-yes" name="stroke" value="stroke-yes">
+                    <label for="stroke-yes">Yes</label><br>
+                    <input type="radio" id="stroke-no" name="stroke" value="stroke-no">
+                    <label for="stroke-no">No</label><br>
+                </div>
+                <div>
+                    <p>Do you have high blood pressure?</p>
+                    <input type="radio" id="bp-yes" name="bp" value="bp-yes">
+                    <label for="bp-yes">Yes</label><br>
+                    <input type="radio" id="bp-no" name="bp" value="bp-no">
+                    <label for="bp-no">No</label><br>
+                </div>
+
+                <h1>LIFESTYLE</h1>
+
+                <div>
+                    <p>Are you alcoholic or not ?</p>
+                    <input type="radio" id="alc-no" name="alcohol" value="alc-no">
+                    <label for="alc-no">No. I don’t drink alcohol.</label><br>
+                    <input type="radio" id="alc-yes" name="alcohol" value="alc-yes">
+                    <label for="alc-yes">Yes. I am alcoholic.</label><br>
+                </div>
+                <div>
+                    <p>Do you smoke?</p>
+                    <input type="radio" id="smk-yes" name="smoke" value="smk-yes">
+                    <label for="smk-yes">Yes</label><br>
+                    <input type="radio" id="smk-no" name="smoke" value="smk-no">
+                    <label for="smk-no">No</label><br>
+                </div>
+                <div>
+                    <p>Which best describes your driving habits?</p>
+                    <input type="radio" name="drive" id="dri-always" value="dri-always">
+                    <label for="dri-always">I always wear helmet, seat belt and avoid taking calls while
+                        driving.</label><br>
+                    <input type="radio" name="drive" id="dri-follow" value="dri-follow">
+                    <label for="dri-follow">I follow traffic rules and avoid rush driving.</label><br>
+                    <input type="radio" name="drive" id="dri-not-follow" value="dri-not-follow">
+                    <label for="dri-not-follow">I don’t wear helmet nor seat belt and love to drive speed.</label><br>
+                    <input type="radio" name="drive" id="dri-no" value="dri-no">
+                    <label for="dri-no">I don't drive.</label><br>
+                </div>
+                <div>
+                    <p>How often do you go to the doctor?</p>
+                    <input type="radio" name="doc" id="doc-go" value="doc-go">
+                    <label for="doc-go">I go to the doctor when I am sick.</label><br>
+                    <input type="radio" name="doc" id="doc-no" value="doc-no">
+                    <label for="doc-no">Never</label><br>
+                    <input type="radio" name="doc" id="doc-often" value="doc-often">
+                    <label for="doc-often">Often for routine checkup.</label><br>
+                </div>
+                <div>
+                    <p>Which best describes your diet?</p>
+                    <input type="radio" name="diet" id="veg" value="veg">
+                    <label for="veg">I eat a pure vegetarian well – balanced diet of healthy carbohydrates, proteins,
+                        vitamins and heathy fats .</label><br>
+                    <input type="radio" name="diet" id="non-veg" value="non-veg">
+                    <label for="non-veg">I eat nonvegetarian well balanced diet of healthy carbohydrates, proteins,
+                        vitamins and healthy fats.</label><br>
+                    <input type="radio" name="diet" id="healthy" value="healthy">
+                    <label for="healthy">I try to eat healthy, but I eat a moderate amount of processed food or
+                        sugar.</label><br>
+                    <input type="radio" name="diet" id="not-healthy" value="not-healthy">
+                    <label for="not-healthy">I don't take healthy diet.</label><br>
+                </div>
+                <div>
+                    <p>Which describes your level of physical activity?</p>
+                    <input type="radio" name="activity" id="thirty-mins" value="thirty-mins">
+                    <label for="thirty-mins">I average at least spend 30 minutes every day in physical
+                        activity.</label><br>
+                    <input type="radio" name="activity" id="three-days" value="three-days">
+                    <label for="three-days">I do exercise three days in a week for 45 minutes.</label><br>
+                    <input type="radio" name="activity" id="no-activity" value="no-activity">
+                    <label for="no-activity">I do little or no physical activity.</label><br>
+                    <input type="radio" name="activity" id="less" value="less">
+                    <label for="less">I do but less than 30 minutes.</label><br>
+                </div>
+                <div>
+                    <p>Do you have any chronic disease history in your family?</p>
+                    <input type="radio" name="disease" id="cancer" value="cancer">
+                    <label for="cancer">Cancer</label><br>
+                    <input type="radio" name="disease" id="heart" value="heart">
+                    <label for="heart">Heart disease</label><br>
+                    <input type="radio" name="disease" id="diabetes" value="diabetes">
+                    <label for="diabetes">Diabetes</label><br>
+                    <input type="radio" name="disease" id="high-bp" value="high-bp">
+                    <label for="high-bp">High blood pressure</label><br>
+                    <input type="radio" name="disease" id="asthma" value="asthma">
+                    <label for="asthma">Asthma</label><br>
+                    <input type="radio" name="disease" id="none" value="none">
+                    <label for="none">None</label><br>
+                </div>
+                <div>
+                    <p>How many hours do you sleep?</p>
+                    <input type="radio" name="sleep" id="six-eight" value="six-eight">
+                    <label for="six-eight">6 to 8 hrs</label><br>
+                    <input type="radio" name="sleep" id="eight-ten" value="eight-ten">
+                    <label for="eight-ten">8 to 10 hrs</label><br>
+                    <input type="radio" name="sleep" id="less-sleep" value="less-sleep">
+                    <label for="less-sleep">less than 6 hrs.</label><br>
+                </div>
+                <div>
+                    <p>Which best describes your personality?</p>
+                    <input type="radio" name="personality" id="sensitive" value="sensitive">
+                    <label for="sensitive">too sensitive and emotional</label><br>
+                    <input type="radio" name="personality" id="thick-skinned" value="thick-skinned">
+                    <label for="thick-skinned">thick skinned</label><br>
+                    <input type="radio" name="personality" id="introvert" value="introvert">
+                    <label for="introvert">introvert</label><br>
+                    <input type="radio" name="personality" id="extrovert" value="extrovert">
+                    <label for="extrovert">extrovert</label><br>
+                </div>
+                <div>
+                    <p>What is the condition of your living environment?</p>
+                    <input type="radio" name="environment" id="clean" value="clean">
+                    <label for="clean">I live in clean environment.</label><br>
+                    <input type="radio" name="environment" id="less-polluted" value="less-polluted">
+                    <label for="less-polluted">Its less polluted.</label><br>
+                    <input type="radio" name="environment" id="polluted" value="polluted">
+                    <label for="polluted">Its air polluted and lot more.</label><br>
+                </div>
+                <div>
+                    <p>How do you handle stress?</p>
+                    <input type="radio" name="stress" id="stress-no" value="stress-no">
+                    <label for="stress-no">I never let stress longer. If I had then I resolve it as soon as
+                        possible.</label><br>
+                    <input type="radio" name="stress" id="stress-yes" value="stress-yes">
+                    <label for="stress-yes">I am often stressed for long periods of time which affects my sleep, mental
+                        peace.</label><br>
+                </div>
+                <div>
+                    <button>Predict</button>
+                </div>
+            </form>
+
+        </section>
+    </main>
+</body>
+
+</html>
