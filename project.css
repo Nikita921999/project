@@ -1,0 +1,339 @@
+body{
+	margin:0px;
+	font-family: sans-serif;
+	font-size:30px;
+}
+
+#body-header{
+	height:80vh;
+	background-image: url(https://www.retirement-planner.co.uk/wp-content/uploads/2015/09/RP_stock_retirement_0915_1.jpg);
+	background-size: contain;
+	background-position: center;
+	opacity: 0.5;
+	background-attachment: fixed;
+	padding-top: 1.2rem;
+}
+/*navigation*/
+.horizontal-list{
+	list-style: none;
+	margin:0px;
+	padding-left: 0px;
+
+}
+.horizontal-list li{
+	display:inline-block;
+	margin:0px 8px 8px 0px;
+	font-weight: 100;
+	font-size:0.9rem;
+}
+.horizontal-list li a{
+	text-decoration: none;
+	color:white;
+}
+.nav-menu li a{
+	transition:color 0.5s, border-bottom 4s;
+}
+.nav-menu li a:hover{
+	color:lightgrey;
+	border-bottom: 1px solid white;
+}
+
+.text-center{
+	text-align: center;
+}
+/*topic*/
+#topic-container{
+	margin-top: 10vh;
+}
+#topic-name{
+	color:white;
+	font-weight: 700;
+	font-size: 3rem;
+	letter-spacing:0.1rem;
+	margin-bottom: 3rem;
+}
+#credit{
+	color:white;
+	font-weight: 100;
+	font-size: 1rem;
+	letter-spacing:0.1rem;
+	margin-bottom: 0.5rem;
+	text-decoration:none;
+}
+#credit a {
+	text-decoration: none;
+	color:white;
+}
+#credit a:hover{
+	color:lightgrey;
+	border-bottom: 1px solid white;
+}
+/*home*/
+#home{
+	height:100vh;
+	width:100%;
+	position: relative;
+}
+#home-para{
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: justify;
+	color:#848e8a;
+	line-height: 2rem;
+	font-weight: 100;
+	font-size: 1rem;
+	letter-spacing:0.1rem;
+	margin-bottom: 0.5rem;
+}
+section{
+	width:100%;
+	/* height:70vh; */
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+/* #contacts:target{
+	background-color: cyan;
+} */
+section:nth-child(2n)
+{
+	background-color:white;
+}
+section:nth-child(2n+1){
+	background-color:white;
+}
+.heading{
+	width:auto;
+	padding:20px 10px 10px;
+	color:#d7263d;
+	font-weight: 700;
+	font-size: 2rem;
+	letter-spacing:0.1rem;
+	margin-bottom: 0.5rem;
+	
+}
+/* .mb75px{
+	margin-bottom: 75px;
+} */
+.display{
+	width:72%;
+	height:200px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+}
+/*about-us*/
+#about
+{
+	height:210vh;
+	margin-top:-50px;
+}
+.about-us{
+	position:relative;
+	/* width:75%; */
+	background-color:#fbc4ab;
+	border-radius:10px;
+	/* padding:15px 25px; */
+	width:100%;
+	max-width:960px;
+	display:flex;
+	flex-direction:row;
+	text-align:center;
+	/* margin-top:-50px; */
+	/* justify-content:space-around; */
+
+}
+.about-us-box{
+	/* margin-top:50px; */
+    border-right:1px solid white;
+	padding:15px;
+}
+.about-us-box:last-child{
+    border-right:none;
+}
+.post{
+	text-align:center;
+	font-size:1rem;
+	display:block;
+	color:#f08080;
+	font-weight:bold;
+	line-height:1.5rem;
+	margin:10px;
+}
+.m-name{
+	text-align:center;
+	font-size:1.2rem;
+	display:block;
+	color:#f08080;
+	letter-spacing: 0rem;
+
+}
+.deg{
+	text-align:center;
+	font-size:0.9rem;
+	display:block;
+	color:grey;
+	font-weight:50;
+}
+.description{
+	font-size:0.9rem;
+	text-align: justify;
+	color:grey;
+	background-size: contain;
+	line-height:1.2rem;
+	margin-top:30px;
+}
+.m-img{
+    margin-bottom:25px;
+    max-width:150px;
+	border-radius:50%;
+	height:150px;
+    /* border:1px solid white; */
+	/* box-shadow: 0px 0px 4px 2px lightgrey; */
+}
+
+/* .about-us-box{
+	position:relative;
+	margin:10px;
+	width:40%;
+	left:5%;
+	min-height:180px;
+}
+.about-us-box:nth-child(2n)
+{
+	left:53%;
+}
+
+.post{
+	text-align:center;
+	font-size:1rem;
+	display:block;
+	color:#f08080;
+	font-weight:bold;
+	line-height:1.5rem;
+}
+.m-name{
+	text-align:center;
+	font-size:1.2rem;
+	display:block;
+	color:#f08080;
+	letter-spacing: 0rem;
+
+}
+.deg{
+	text-align:center;
+	font-size:0.9rem;
+	display:block;
+	color:grey;
+	font-weight:50;
+}
+.description{
+	font-size:0.9rem;
+	text-align: justify;
+	color:grey;
+	background-size: contain;
+	line-height:1.2rem;
+} */
+/* Calculator */
+#calculate{
+	padding:10px;
+	background-color:#348efe;
+	margin-left:430px;
+	border: 1px solid #028090;
+	border-radius:10px;
+	padding:15px 35px;
+	transition : color 2s;
+	transition: background-color 200ms ease-in-out;
+}
+#calculate a {
+	font-size:25px;
+	color:white;
+	font-weight:bold;
+	text-decoration: none;
+}
+#calculate:hover{
+	background-color: #e1f1ff;
+	box-shadow: 5px 5px 5px 4px rgba(0, 100, 130, 0.8);
+	cursor:pointer;
+}
+#calculate a:hover{
+	color:#6c757d;
+}
+
+/*contact*/
+#contact{
+	height:75vh;
+	background:linear-gradient(to right,#ed9792,#f9c491);
+}
+#contact .section-heading span{
+	color:white;
+}
+#contact .display{
+	width:80%;
+}
+.contact-form{
+	display:inline-block;
+	height:50%;
+	width:50%;
+}
+.form-group{
+	position:relative;
+	display:block;
+	margin-bottom:48px;
+	color:grey;
+	font-size:15px;
+}
+.form-control{
+	border:none;
+	border-bottom:2px solid white;
+	display:block;
+	width:100%;
+	height:43px;
+	background:none;
+
+
+}
+.form-group span{
+	color:grey;
+	position:absolute;
+	top:11px;
+
+}
+.form-button{
+	padding:10px;
+	background: none;
+	margin:0px 190px;
+	transition: color 3s;
+
+}
+.form-button:hover{
+box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, 0.8);
+cursor:pointer;
+}
+.form-button span{
+	font-size:15px;
+	color:white;
+	font-weight:bold;
+}
+.contact-details{
+	display:inline-block;
+	height:50%;
+	width:50%;
+
+}
+.details h6{
+	color:white;
+	margin-top:15px;
+	margin-left:90px;
+	margin-bottom: 30px;
+	text-align:left;
+}
+.details p{
+	color:white;
+	margin-left:90px;
+	text-align:left;
+	font-size:1rem;
+	margin-bottom: 20px;
+}
+
+
