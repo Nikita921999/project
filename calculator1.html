@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="calculator1.css">
+    <title>Calculate Life Expectancy</title>
+</head>
+
+<body>
+
+    <!-- <main>
+        <form action="">
+            <p>
+                <label for="full-name">Enter your name : </label>
+                <input type="text" id="full-name" name="full-name" required>
+            </p>
+            <p>
+                <label for="age">Enter your age : </label>
+                <input type="text" id="age" name="age" required>
+            </p>
+            <p>Gender : <br>
+                <input type="radio" id="female" name="gender" value="0">
+                <label for="female">Female</label><br>
+                <input type="radio" id="male" name="gender" value="1">
+                <label for="male">Male</label><br>
+
+            </p>
+            <p>
+                <label for="height">Enter height (in cm) : </label>
+                <input type="text" id="height" name=heigth required>
+            </p>
+            <p>
+                <label for="weight">Enter weight (in kg) : </label>
+                <input type="text" id="weight" name=weigth required>
+            </p>
+            <p>Do you smoke?<br>
+                <input type="radio" id="smk-yes" name="smoke" value="0">
+                <label for="smk-yes">Yes</label><br>
+                <input type="radio" id="smk-no" name="smoke" value="1">
+                <label for="smk-no">No</label><br>
+            </p>
+            <p>Are you alcoholic or not ?<br>
+                <input type="radio" id="alc-yes" name="alcohol" value="0">
+                <label for="alc-yes">Yes. I am alcoholic.</label><br>
+                <input type="radio" id="alc-no" name="alcohol" value="1">
+                <label for="alc-no">No. I don’t drink alcohol.</label><br>
+
+            </p>
+            <p>Do you have diabetes?<br>
+                <input type="radio" name="diabetes" id="dia-controlled" value="0">
+                <label for="dia-controlled">Yes</label><br>
+                <input type="radio" name="diabetes" id="dia-no" value="1">
+                <label for="dia-no">No</label><br>
+
+            </p>
+
+            <p>Do you have any heart disease history?<br>
+                <input type="radio" name="heart" id="hrt-yes" value="0">
+                <label for="hrt-yes">Yes</label><br>
+                <input type="radio" name="heart" id="hrt-no" value="1">
+                <label for="hrt-no">No.</label><br>
+
+            </p>
+
+            <p>Do you have high blood pressure?<br>
+                <input type="radio" id="bp-yes" name="bp" value="0">
+                <label for="bp-yes">Yes</label><br>
+                <input type="radio" id="bp-no" name="bp" value="1">
+                <label for="bp-no">No</label><br>
+            </p>
+
+            <p>Which best describes your driving habits?<br>
+                <input type="radio" name="drive" id="dri-good" value="0">
+                <label for="dri-good">Good</label><br>
+                <input type="radio" name="drive" id="dri-bad" value="1">
+                <label for="dri-bad">Bad</label><br>
+                <input type="radio" name="drive" id="dri-no" value="2">
+                <label for="dri-no">I don't drive.</label><br>
+            </p>
+            <p>Do you have any chronic disease history in your family? Consider choosing the most relevant option.<br>
+                <input type="radio" name="disease" id="diabetes" value="1.0">
+                <label for="diabetes">Diabetes</label><br>
+                <input type="radio" name="disease" id="heart" value="1.1">
+                <label for="heart">Heart Disease</label><br>
+                <input type="radio" name="disease" id="cancer" value="1.3">
+                <label for="cancer">Cancer</label><br>
+                <input type="radio" name="disease" id="high-bp" value="1.4">
+                <label for="high-bp">Blood pressure</label><br>
+                <input type="radio" name="disease" id="none" value="1.5">
+                <label for="none">None</label><br>
+                <input type="radio" name="disease" id="asthma" value="1.6">
+                <label for="asthma">Asthma</label><br>
+
+            </p>
+
+            <p>How many hours do you sleep?<br>
+                <input type="radio" name="sleep" id="six-eight" value="0">
+                <label for="six-eight">6 to 8 hrs</label><br>
+                <input type="radio" name="sleep" id="eight-ten" value="1">
+                <label for="eight-ten">8 to 10 hrs</label><br>
+                <input type="radio" name="sleep" id="less-sleep" value="2">
+                <label for="less-sleep">less than 6 hrs</label><br>
+                <input type="radio" name="sleep" id="more-sleep" value="3">
+                <label for="more-sleep">more than 10 hrs</label><br>
+            </p>
+            <p>Which best describes your food habit?<br>
+                <input type="radio" name="diet" id="veg" value="0">
+                <label for="veg"> Vegetarian</label><br>
+                <input type="radio" name="diet" id="non-veg" value="1">
+                <label for="non-veg">Non-vegetarian</label><br>
+            </p>
+
+            <p>Which describes your level of physical activity?<br>
+                <input type="radio" name="activity" id="thirty-mins" value="1">
+                <label for="thirty-mins">I average at least spend 30 minutes every day in
+                    physical activity.</label><br>
+                <input type="radio" name="activity" id="three-days" value="2">
+                <label for="three-days">I do exercise three days in a week for 45
+                    minutes.</label><br>
+                <input type="radio" name="activity" id="no-activity" value="3">
+                <label for="no-activity">I do little or no physical
+                    activity.</label><br>
+                <input type="radio" name="activity" id="less" value="4">
+                <label for="less">I do but less than 30 minutes.</label><br>
+                <input type="radio" name="activity" id="less" value="5">
+                <label for="less">I do but less than 30 minutes.</label><br>
+            </p>
+
+            <p>What is the condition of your living environment?<br>
+                <input type="radio" name="environment" id="clean" value="1">
+                <label for="clean">I live in clean environment.</label><br>
+                <input type="radio" name="environment" id="less-polluted" value="2">
+                <label for="less-polluted">It is less polluted.</label><br>
+                <input type="radio" name="environment" id="polluted" value="3">
+                <label for="polluted">Its air polluted and lot more.</label><br>
+            </p>
+
+            <p>Which best describes your personality?<br>
+                <input type="radio" name="personality" id="sensitive" value="2.1">
+                <label for="sensitive">too sensitive</label><br>
+                <input type="radio" name="personality" id="thick-skinned" value="2.2">
+                <label for="thick-skinned">thick skinned</label><br>
+                <input type="radio" name="personality" id="emotional" value="2.3">
+                <label for="emotional">emotional</label><br>
+                <input type="radio" name="personality" id="introvert" value="2.4">
+                <label for="introvert">introvert</label><br>
+                <input type="radio" name="personality" id="extrovert" value="2.5">
+                <label for="extrovert">extrovert</label><br>
+
+            </p>
+            <p>How do you describe your stress levels?<br>
+                <input type="radio" name="stress" id="stress-low" value="1">
+                <label for="stress-low">low</label><br>
+                <input type="radio" name="stress" id="stress-medium" value="2">
+                <label for="stress-medium">medium</label><br>
+                <input type="radio" name="stress" id="stress-high" value="3">
+                <label for="stress-high">extremely high</label><br>
+                <input type="radio" name="stress" id="stress-no" value="4">
+                <label for="stress-no">none</label><br>
+            </p>
+            <div>
+                <button>Predict</button>
+            </div>
+        </form>
+
+        </section>
+    </main> -->
+    <nav class="navbar navbar-expand-md navbar-dark py-0 fixed-top justify-content-center" id="mainNavbar">
+        <a class="navbar-brand" href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-columns-gap" viewBox="0 0 16 16">
+                    <path
+                        d="M6 1v3H1V1h5zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12v3h-5v-3h5zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8v7H1V8h5zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6v7h-5V1h5zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z" />
+                </svg></span>&ensp;LIFE EXPECTANCY CALCULATOR</a>
+    </nav>
+    <div class="alert alert-danger mt-5" role="alert">
+        <h4 class="alert-heading text-center">Predict your Life Expectancy based on your Lifestyle !</h4>
+        <p class="text-center">Here, we are modelling some questions based on lifestyle in the present scenario. These
+            will be simple
+            and common questions, easy to answer, related to your daily routine and habits. We will be glad to have your
+            response to
+            this form. It won't take much time.</p>
+        <hr>
+        <p class="mb-0 text-center">So let's start.</p>
+    </div>
+
+    <section id="questions" class="container mt-5">
+        <form>
+            <div class="form-group">
+                <label for="full-name">Enter your name :</label>
+                <input type="text" class="form-control" id="full-name" aria-describedby="nameHelp" required>
+                <small id="nameHelp" class="form-text text-muted">Please enter your full name.</small>
+            </div>
+            <div class="form-group">
+                <label for="age">Enter your age :</label>
+                <input type="number" class="form-control" id="age" min="1" max="80">
+            </div>
+            <p>Gender : </p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="female" value="0">
+                <label class="form-check-label" for="female">
+                    Female
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="male" value="1">
+                <label class="form-check-label" for="male">
+                    Male
+                </label>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="height">Enter height (in cm) : </label>
+                        <input type="number" class="form-control" id="height" min="45" max="210" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="weight">Enter weight (in kg) : </label>
+                        <input type="number" class="form-control" id="weight" min="4" max="100" required>
+                    </div>
+                </div>
+            </div>
+            <p>Do you smoke?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="smoke" id="smk-yes" value="0">
+                <label class="form-check-label" for="smk-yes">
+                    Yes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="smoke" id="smk-no" value="1">
+                <label class="form-check-label" for="smk-no">
+                    No
+                </label>
+            </div>
+            <br>
+            <p>Are you alcoholic or not ?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="alcohol" id="alc-yes" value="0">
+                <label class="form-check-label" for="alc-yes">
+                    Yes. I am alcoholic.
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="alcohol" id="alc-no" value="1">
+                <label class="form-check-label" for="alc-no">
+                    No. I don’t drink alcohol.
+                </label>
+            </div>
+            <br>
+            <p>Do you have diabetes?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="diabetes" id="dia-yes" value="0">
+                <label class="form-check-label" for="dia-yes">
+                    Yes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="diabetes" id="dia-no" value="1">
+                <label class="form-check-label" for="dia-no">
+                    No
+                </label>
+            </div>
+            <br>
+            <p>Do you have any heart disease history?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="heart" id="hrt-yes" value="0">
+                <label class="form-check-label" for="hrt-yes">
+                    Yes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="heart" id="hrt-no" value="1">
+                <label class="form-check-label" for="hrt-no">
+                    No
+                </label>
+            </div>
+            <br>
+            <p>Do you have high blood pressure?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="bp" id="bp-yes" value="0">
+                <label class="form-check-label" for="bp-yes">
+                    Yes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="bp" id="bp-no" value="1">
+                <label class="form-check-label" for="bp-no">
+                    No
+                </label>
+            </div>
+            <br>
+            <p>Which best describes your driving habits?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="drive" id="dri-good" value="0">
+                <label class="form-check-label" for="dri-good">
+                    Good
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="drive" id="dri-bad" value="1">
+                <label class="form-check-label" for="dri-bad">
+                    Bad
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="drive" id="dri-no" value="2">
+                <label class="form-check-label" for="dri-no">
+                    I don't drive.
+                </label>
+            </div>
+            <br>
+            <p>Do you have any chronic disease history in your family? Consider the most relevant choice.</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="disease" id="diabetes" value="1.0">
+                <label class="form-check-label" for="diabetes">
+                    Diabetes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="disease" id="heart" value="1.1">
+                <label class="form-check-label" for="heart">
+                    Heart Disease
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="disease" id="cancer" value="1.3">
+                <label class="form-check-label" for="cancer">
+                    Cancer
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="disease" id="high-bp" value="1.4">
+                <label class="form-check-label" for="high-bp">
+                    Blood pressure
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="disease" id="asthma" value="1.6">
+                <label class="form-check-label" for="asthma">
+                    Asthma
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="disease" id="none" value="1.5">
+                <label class="form-check-label" for="none">
+                    None
+                </label>
+            </div>
+            <br>
+            <p>How many hours do you sleep?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sleep" id="six-eight" value="0">
+                <label class="form-check-label" for="six-eight">
+                    6 to 8 hrs
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sleep" id="eight-ten" value="1">
+                <label class="form-check-label" for="eight-ten">
+                    8 to 10 hrs
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sleep" id="less-sleep" value="2">
+                <label class="form-check-label" for="less-sleep">
+                    less than 6 hrs
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sleep" id="more-sleep" value="3">
+                <label class="form-check-label" for="more-sleep">
+                    more than 10 hrs
+                </label>
+            </div>
+            <br>
+            <p>Which best describes your food habit?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="diet" id="veg" value="0">
+                <label class="form-check-label" for="veg">
+                    Vegetarian
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="diet" id="non-veg" value="1">
+                <label class="form-check-label" for="non-veg">
+                    Non-vegetarian
+                </label>
+            </div>
+            <br>
+            <p>Which describes your level of physical activity?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="activity" id="thirty-mins" value="1">
+                <label class="form-check-label" for="thirty-mins">
+                    I at least spend 30 minutes every day in
+                    physical activity.
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="activity" id="three-days" value="2">
+                <label class="form-check-label" for="three-days">
+                    I do exercise three days in a week for 45
+                    minutes.
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="activity" id="no-activity" value="3">
+                <label class="form-check-label" for="no-activity">
+                    I do little or no physical
+                    activity.
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="activity" id="less" value="4">
+                <label class="form-check-label" for="less">
+                    I do but less than 30 minutes.
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="activity" id="two-hrs" value="5">
+                <label class="form-check-label" for="two-hrs">
+                    I work-out for 2 hrs everyday.
+                </label>
+            </div>
+            <br>
+            <p>What is the condition of your living environment?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="environment" id="clean" value="1">
+                <label class="form-check-label" for="clean">
+                    I live in clean environment.
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="environment" id="less-polluted" value="2">
+                <label class="form-check-label" for="less-polluted">
+                    It is less polluted.
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="environment" id="polluted" value="3">
+                <label class="form-check-label" for="polluted">
+                    Its air is polluted a lot more.
+                </label>
+            </div>
+            <br>
+            <p>Which best describes your personality?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="personality" id="sensitive" value="2.1">
+                <label class="form-check-label" for="sensitive">
+                    too sensitive
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="personality" id="thick-skinned" value="2.2">
+                <label class="form-check-label" for="thick-skinned">
+                    thick skinned
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="personality" id="emotional" value="2.3">
+                <label class="form-check-label" for="emotional">
+                    emotional
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="personality" id="introvert" value="2.4">
+                <label class="form-check-label" for="less">
+                    introvert
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="personality" id="evtrovert" value="2.5">
+                <label class="form-check-label" for="evtrovert">
+                    evtrovert
+                </label>
+            </div>
+            <br>
+            <p>How do you describe your stress levels?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="stress" id="stress-low" value="1">
+                <label class="form-check-label" for="stress-low">
+                    low
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="stress" id="stress-medium" value="2">
+                <label class="form-check-label" for="stress-medium">
+                    medium
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="stress" id="stress-high" value="3">
+                <label class="form-check-label" for="stress-high">
+                    extremely high
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="stress" id="stress-no" value="4">
+                <label class="form-check-label" for="stress-no">
+                    none
+                </label>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+
+</html>
